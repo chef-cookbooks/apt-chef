@@ -22,8 +22,14 @@ node.default['apt-chef'].tap do |apt|
   # The base URI for the repository, must be a string
   apt['uri']                 = 'https://packagecloud.io/chef/stable/ubuntu/'
 
-  # Location for the GPG key used to sign the repository
-  apt['key']                 = 'https://packagecloud.io/gpg.key'
+  # Use the local copy of the Chef public GPG key if we're on a Chef Server.
+  # This is to preserve compatibility with the `chef-server-ctl install` command.
+  # Otherwise, retrieve the public key from Chef's downloads page.
+  apt['gpg']         = if File.exist?('/opt/opscode/embedded/keys/packages-chef-io-public.key')
+                         'file:///opt/opscode/embedded/keys/packages-chef-io-public.key'
+                       else
+                         'https://downloads.chef.io/packages-chef-io-public.key'
+                       end
 
   # A list of codenames that are supported for the repository. These
   # are the Ubuntu LTS releases by default, because this is primarily
