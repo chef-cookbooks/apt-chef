@@ -18,6 +18,20 @@ Only supports Ubuntu. May work on other Debian-family distributions. Other platf
 
 The `attributes/default.rb` file contains comments with all the attributes that can be set to control how this cookbook sets up the repository.
 
+## Recipes
+
+### default
+
+Uses the attributes in `attributes/default.rb` to control how the repository is configured.
+
+### current
+
+Hard-codes Chef's public "current" repository. Used for situations where both stable and current repositories are desired.
+
+### stable
+
+Hard-codes Chef's public "stable" repository. Used for situations where both stable and current repositories are desired.
+
 ## A Note About Proxies
 
 If an HTTP proxy is required to reach the configured repository, then that can be managed outside this cookbook using an apt preferences file. A very simple example can be rendered with a file resource:
