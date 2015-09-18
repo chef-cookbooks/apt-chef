@@ -1,5 +1,8 @@
 # apt-chef
 
+[![Build Status](https://travis-ci.org/chef-cookbooks/apt-chef.svg?branch=master)](https://travis-ci.org/chef-cookbooks/apt-chef)
+[![Cookbook Version](https://img.shields.io/cookbook/v/apt-chef.svg)](https://supermarket.chef.io/cookbooks/apt-chef)
+
 Sets up the default apt package repository for Chef Software, Inc. products.
 
 Primarily intended to be consumed by the chef-ingredient cookbook.
