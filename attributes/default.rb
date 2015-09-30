@@ -25,10 +25,10 @@ node.default['apt-chef'].tap do |apt|
   # Use the local copy of the Chef public GPG key if we're on a Chef Server.
   # This is to preserve compatibility with the `chef-server-ctl install` command.
   # Otherwise, retrieve the public key from Chef's downloads page.
-  apt['gpg']         = if File.exist?('/opt/opscode/embedded/keys/packages-chef-io-public.key')
-                         'file:///opt/opscode/embedded/keys/packages-chef-io-public.key'
-                       else
-                         'https://downloads.chef.io/packages-chef-io-public.key'
+  apt['gpg'] = if File.exist?('/opt/opscode/embedded/keys/packages-chef-io-public.key')
+                 'file:///opt/opscode/embedded/keys/packages-chef-io-public.key'
+               else
+                 'https://downloads.chef.io/packages-chef-io-public.key'
                        end
 
   # A list of codenames that are supported for the repository. These
