@@ -29,7 +29,7 @@ node.default['apt-chef'].tap do |apt|
                  'file:///opt/opscode/embedded/keys/packages-chef-io-public.key'
                else
                  'https://downloads.chef.io/packages-chef-io-public.key'
-                       end
+               end
 
   # A list of codenames that are supported for the repository. These
   # are the Ubuntu LTS releases by default, because this is primarily
