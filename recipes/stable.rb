@@ -20,7 +20,7 @@
 
 apt_repository 'chef-stable' do
   uri 'https://packagecloud.io/chef/stable/ubuntu/'
-  key node['apt-chef']['key']
+  key node['apt-chef']['gpg']
   distribution node['apt-chef']['codename']
   components ['main']
   trusted true
