@@ -20,7 +20,7 @@
 
 apt_repository node['apt-chef']['repo_name'] do
   uri node['apt-chef']['uri']
-  key node['apt-chef']['key']
+  key node['apt-chef']['gpg']
   distribution node['apt-chef']['codename']
   components ['main']
   trusted true
