@@ -18,10 +18,4 @@
 # limitations under the License.
 #
 
-apt_repository node['apt-chef']['repo_name'] do
-  uri node['apt-chef']['uri']
-  key node['apt-chef']['key']
-  distribution node['apt-chef']['codename']
-  components ['main']
-  trusted true
-end
+include_recipe 'apt-chef::stable'

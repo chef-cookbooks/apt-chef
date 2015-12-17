@@ -18,9 +18,9 @@
 # limitations under the License.
 #
 
-apt_repository 'chef-stable' do
-  uri 'https://packagecloud.io/chef/stable/ubuntu/'
-  key node['apt-chef']['key']
+apt_repository node['apt-chef']['repo_name']  do
+  uri node['apt-chef']['uri'] 
+  key node['apt-chef']['gpg']
   distribution node['apt-chef']['codename']
   components ['main']
   trusted true
