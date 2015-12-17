@@ -16,6 +16,9 @@
 #
 
 node.default['apt-chef'].tap do |apt|
+  # Set the repository name, must be a string.
+  apt['repo_name']           = 'chef-stable'
+
   # Use the local copy of the Chef public GPG key if we're on a Chef Server.
   # This is to preserve compatibility with the `chef-server-ctl install` command.
   # Otherwise, retrieve the public key from Chef's downloads page.
