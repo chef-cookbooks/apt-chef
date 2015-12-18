@@ -7,7 +7,7 @@ describe 'apt-chef::default' do
         node.set['apt-chef'].tap do |apt|
           apt['repo_name'] = 'chef-nightly'
           apt['uri'] = 'https://example.com/chef/nightly/ubuntu'
-          apt['key'] = 'https://example.com/package-public.key'
+          apt['gpg'] = 'https://example.com/package-public.key'
         end
       end.converge(described_recipe)
     end
@@ -34,7 +34,7 @@ describe 'apt-chef::default' do
       expect(chef_run).to add_apt_repository('chef-stable').with(
         repo_name: 'chef-stable',
         uri: 'https://packagecloud.io/chef/stable/ubuntu/',
-        key: 'https://packagecloud.io/gpg.key',
+        key: 'https://downloads.chef.io/packages-chef-io-public.key',
         distribution: 'trusty'
       )
     end
