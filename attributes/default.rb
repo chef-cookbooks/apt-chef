@@ -26,7 +26,7 @@ node.default['apt-chef'].tap do |apt|
   # This is to preserve compatibility with the `chef-server-ctl install` command.
   # Otherwise, retrieve the public key from Chef's downloads page.
   apt['gpg'] = if File.exist?('/opt/opscode/embedded/keys/packages-chef-io-public.key')
-                 'file:///opt/opscode/embedded/keys/packages-chef-io-public.key'
+                 nil
                else
                  'https://downloads.chef.io/packages-chef-io-public.key'
                end
