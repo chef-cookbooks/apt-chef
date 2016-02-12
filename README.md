@@ -49,6 +49,16 @@ end
 
 See the [apt preferences documentation](https://wiki.debian.org/AptConf) for more information and configurable options.
 
+## A Note About Ubuntu 10.04 and unsigned packages
+
+Ubuntu 10.04, unlike later versions, will not install unsigned packages without adding a force option. If you should run into this, you can update your consuming resource as follows:
+
+```ruby
+package 'chef-ha' do
+  options '--force-yes' if platform?('ubuntu') && node['platform_version'] == '10.04'
+end
+```
+
 ## License & Authors
 
 **Author:** Cookbook Engineering Team (<cookbooks@chef.io>)
