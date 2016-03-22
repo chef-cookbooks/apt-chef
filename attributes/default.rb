@@ -20,7 +20,7 @@ node.default['apt-chef'].tap do |apt|
   apt['repo_name']           = 'chef-stable'
 
   # The base URI for the repository, must be a string
-  apt['uri']                 = 'https://packagecloud.io/chef/stable/ubuntu/'
+  apt['uri']                 = 'https://packages.chef.io/stable-apt'
 
   # Use the local copy of the Chef public GPG key if we're on a Chef Server.
   # This is to preserve compatibility with the `chef-server-ctl install` command.
