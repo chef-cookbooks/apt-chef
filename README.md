@@ -1,7 +1,6 @@
 # apt-chef
 
-[![Build Status](https://travis-ci.org/chef-cookbooks/apt-chef.svg?branch=master)](https://travis-ci.org/chef-cookbooks/apt-chef)
-[![Cookbook Version](https://img.shields.io/cookbook/v/apt-chef.svg)](https://supermarket.chef.io/cookbooks/apt-chef)
+[![Build Status](https://travis-ci.org/chef-cookbooks/apt-chef.svg?branch=master)](https://travis-ci.org/chef-cookbooks/apt-chef) [![Cookbook Version](https://img.shields.io/cookbook/v/apt-chef.svg)](https://supermarket.chef.io/cookbooks/apt-chef)
 
 Sets up the default apt package repository for Chef Software, Inc. products.
 
@@ -9,15 +8,17 @@ Primarily intended to be consumed by the chef-ingredient cookbook.
 
 ## Requirements
 
-#### Platforms
+### Platforms
+
 - Only supports Ubuntu. May work on other Debian-family distributions. Other platforms don't make sense with apt repositories.  However, not all platforms that this cookbook will work on have supported packages from the repository. See [supported platforms](https://docs.chef.io/supported_platforms.html). Users may need to override attributes in roles or wrapper cookbooks to get this to work, or write their own cookbooks entirely.
 
-#### Chef
+### Chef
+
 - Chef 11+
 
-#### Cookbooks
-- apt
+### Cookbooks
 
+- apt
 
 ## Attributes
 
@@ -61,9 +62,10 @@ end
 
 ## License & Authors
 
-**Author:** Cookbook Engineering Team (<cookbooks@chef.io>)
+**Author:** Cookbook Engineering Team ([cookbooks@chef.io](mailto:cookbooks@chef.io))
 
-**Copyright:** 2008-2015, Chef Software, Inc.
+**Copyright:** 2008-2016, Chef Software, Inc.
+
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
