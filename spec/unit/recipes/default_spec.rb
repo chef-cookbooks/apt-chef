@@ -4,7 +4,7 @@ describe 'apt-chef::default' do
   context 'cookbook attributes are set, on an unspecified platform' do
     let(:chef_run) do
       ChefSpec::ServerRunner.new do |node|
-        node.set['apt-chef'].tap do |apt|
+        node.normal['apt-chef'].tap do |apt|
           apt['repo_name'] = 'chef-nightly'
           apt['uri'] = 'https://example.com/chef/nightly/ubuntu'
           apt['gpg'] = 'https://example.com/package-public.key'
