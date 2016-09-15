@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the apt-chef cookbook.
 
+## 2.0.0 (2016-09-15)
+- Testing updates
+- Require Chef 12.1
+
 # v1.0.0 (2016-03-23)
 
 - Add testing for Ubuntu 10.04 and a note on 10.04 and unsigned packages
