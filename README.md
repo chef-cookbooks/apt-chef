@@ -14,7 +14,7 @@ Primarily intended to be consumed by the chef-ingredient cookbook.
 
 ### Chef
 
-- Chef 11+
+- Chef 12.1+
 
 ### Cookbooks
 
