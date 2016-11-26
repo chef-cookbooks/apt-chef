@@ -2,6 +2,9 @@
 
 This file is used to list changes made in each version of the apt-chef cookbook.
 
+## 2.0.1 (2016-11-25)
+- Testing improvements
+
 ## 2.0.0 (2016-09-27)
 - Testing updates
 - Require Chef 12.1
