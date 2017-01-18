@@ -18,7 +18,7 @@ Primarily intended to be consumed by the chef-ingredient cookbook.
 
 ### Cookbooks
 
-- apt
+- compat_resource
 
 ## Attributes
 
