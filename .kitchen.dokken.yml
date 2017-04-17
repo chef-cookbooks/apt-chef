@@ -34,5 +34,4 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[apt-chef::default]
       - recipe[test::default]
