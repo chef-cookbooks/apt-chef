@@ -10,15 +10,15 @@ Primarily intended to be consumed by the chef-ingredient cookbook.
 
 ### Platforms
 
-- Only supports Ubuntu. May work on other Debian-family distributions. Other platforms don't make sense with apt repositories.  However, not all platforms that this cookbook will work on have supported packages from the repository. See [supported platforms](https://docs.chef.io/supported_platforms.html). Users may need to override attributes in roles or wrapper cookbooks to get this to work, or write their own cookbooks entirely.
+- Only supports Ubuntu. May work on other Debian-family distributions. Other platforms don't make sense with apt repositories. However, not all platforms that this cookbook will work on have supported packages from the repository. See [supported platforms](https://docs.chef.io/supported_platforms.html). Users may need to override attributes in roles or wrapper cookbooks to get this to work, or write their own cookbooks entirely.
 
 ### Chef
 
-- Chef 12.1+
+- Chef 12.9+
 
 ### Cookbooks
 
-- compat_resource
+- none
 
 ## Attributes
 
