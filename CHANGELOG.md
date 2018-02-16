@@ -2,7 +2,14 @@
 
 This file is used to list changes made in each version of the apt-chef cookbook.
 
+## 3.0.0 (2018-02-16)
+
+- Require Chef 12.9 or later and remove the need for the compat_resource cookbook
+- Testing improvements
+- Use a SPDX compliant license string
+
 ## 2.0.1 (2016-11-25)
+
 - Testing improvements
 
 ## 2.0.0 (2016-09-27)
