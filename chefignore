@@ -60,6 +60,7 @@ spec/*
 Rakefile
 .travis.yml
 .foodcritic
+appveyor.yml
 .codeclimate.yml
 
 # SCM #
@@ -93,14 +94,3 @@ CONTRIBUTING*
 CHANGELOG*
 TESTING*
 
-# Strainer #
-############
-Colanderfile
-Strainerfile
-.colander
-.strainer
-
-# Vagrant #
-###########
-.vagrant
-Vagrantfile
