@@ -9,4 +9,4 @@ supports 'ubuntu'
 
 source_url 'https://github.com/chef-cookbooks/apt-chef'
 issues_url 'https://github.com/chef-cookbooks/apt-chef/issues'
-chef_version '>= 12.9' if respond_to?(:chef_version)
+chef_version '>= 12.9'
