@@ -1,6 +1,7 @@
 # apt-chef
 
-[![Build Status](https://travis-ci.org/chef-cookbooks/apt-chef.svg?branch=master)](https://travis-ci.org/chef-cookbooks/apt-chef) [![Cookbook Version](https://img.shields.io/cookbook/v/apt-chef.svg)](https://supermarket.chef.io/cookbooks/apt-chef)
+[![CI State](https://github.com/chef-cookbooks/apt-chef/workflows/ci/badge.svg)](https://github.com/chef-cookbooks/apt-chef/actions?query=workflow%3Aci)
+[![Cookbook Version](https://img.shields.io/cookbook/v/apt-chef.svg)](https://supermarket.chef.io/cookbooks/apt-chef)
 
 Sets up the default apt package repository for Chef Software, Inc. products.
 
@@ -14,7 +15,7 @@ Primarily intended to be consumed by the chef-ingredient cookbook.
 
 ### Chef
 
-- Chef 12.9+
+- Chef 12.15+
 
 ### Cookbooks
 
@@ -64,7 +65,7 @@ end
 
 **Author:** Cookbook Engineering Team ([cookbooks@chef.io](mailto:cookbooks@chef.io))
 
-**Copyright:** 2008-2016, Chef Software, Inc.
+**Copyright:** 2008-2020, Chef Software, Inc.
 
 ```
 Licensed under the Apache License, Version 2.0 (the "License");
