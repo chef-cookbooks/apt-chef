@@ -45,23 +45,21 @@ a.out
 
 # Testing #
 ###########
-.watchr
 .rspec
 spec/*
 spec/fixtures/*
 test/*
 features/*
 examples/*
-Guardfile
 Procfile
 .kitchen*
+kitchen*
 .rubocop.yml
 spec/*
-Rakefile
 .travis.yml
 .foodcritic
 appveyor.yml
-.codeclimate.yml
+Rakefile
 
 # SCM #
 #######
@@ -93,4 +91,3 @@ Policyfile.lock.json
 CONTRIBUTING*
 CHANGELOG*
 TESTING*
-
